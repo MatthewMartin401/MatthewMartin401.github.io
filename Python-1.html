@@ -1,0 +1,58 @@
+<html>
+    <title id="title">
+    </title>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <u>Header</u>
+        </header>
+        <table>
+            <tr>
+                <td>
+                    <a href="Main.html">Home</a>
+                </td>
+                <td>
+                    <a href="">Contact</a>
+                </td>
+                <td>
+                    <a href="">About</a>
+                </td>
+            </tr>
+        </table>
+        <div class="page">
+            <h1>Python Project: Journal App.</h1>
+            <p>Libraries used:</p>
+            <ol>
+                <li>TkInter</li>
+            </ol>
+            <img class="project-img" src="" alt="picture 1 description."/>
+            <img class="project-img" src="" alt="picture 2 description."/>
+            <p>Description.</p>
+        </div>
+    </body>
+    <footer>
+        Footer
+    </footer>
+</html>
+
+
+<script>
+    const URL_Param = new URLSearchParams(window.location.search)
+    const name = URL_Param.get("name")
+
+    const t = document.getElementById("title")
+    t.innerHTML = name
+
+    const h = document.querySelectorAll("h1")
+    console.log(h.length)
+    console.log(h)
+    h[0].innerHTML = "test"
+    // h["h1"].innerHTML = "test"
+    // h.h1.innerHTML = "test"
+    // h.getChild(h1).innerHTML = "test"
+    // const h1 = document.getElementsByTagName("page")
+    // h1.innerHTML = "test"
+    
+</script>
