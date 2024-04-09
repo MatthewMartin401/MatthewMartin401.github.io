@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Main Page
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <u>Matthew Martin - Portfolio</u>
+        </header>
+        <table>
+            <tr>
+                <td>
+                    <a href="/">Home</a>
+                </td>
+                <td>
+                    <a href="">Contact</a>
+                </td>
+                <td>
+                    <a href="">About</a>
+                </td>
+            </tr>
+        </table>
+        <div class="page">
+            <div class="contents">
+                <h1>
+                    <u>Home Page</u>
+                </h1>
+                
+                <h2>
+                    <u>Projects:</u>
+                </h2>
+                <ul id = "Project_list">
+                    <!-- <li>
+                        <b>Python:</b>
+                    </li>
+                        <ul>
+                            <li>
+                                <a href="Project.html?project=p1" onmouseover="console.log('hi')">Test 1</a>
+                            </li>
+                            <li>
+                                <a href="Project.html?project=p2", onmouseover="console.log('hi')">Test 2</a>
+                            </li>
+                        </ul>
+                    <li>
+                        <b>React:</b>
+                    </li>
+                        <ul>
+                            <li>
+                                <a href="Project.html">E-commerce Website</a>
+                            </li>
+                        </ul>
+                    <li>
+                        <b>JavaScript:</b>
+                    </li>
+                        <ul>
+                            <li>
+                                <a href="Project.html">3</a>
+                            </li>
+                        </ul> -->
+                </ul>  
+            </div>
+        </div>
+    </body>
+    <footer>
+        Footer
+    </footer>
+</html>
+
+<script>
+    console.log("script")
+    const Projects = [
+        ["Python", ["Journal App", "p1"],["example 2", ""]],
+        ["React", ["E-Commerce Website", "p3"]],
+        ["JavaScript", []],
+        ["Unreal Engine 4", []]
+    ]
+    const project_table = document.getElementById("Project_list")
+    console.log(Projects)
+    for(x = 0; x < Projects.length; x++){
+        let item = Projects[x]
+        // console.log(x)
+        // console.log(item)
+        // console.log(item.length)
+        if(item[1].length > 0){
+            let lan = document.createElement("li")
+            // console.log(item[0])
+            lan.textContent = item[0]
+            project_table.appendChild(lan)
+
+            let container = document.createElement("ul")
+            project_table.appendChild(container)
+            for(i = 1; i < item.length; i++){
+                let li = document.createElement("li")
+                let url = document.createElement("a")
+                // console.log(`${item[1]}`)
+                url.innerText = item[i][0]
+                url.href = `Project.html?project=${item[i][1]}`
+                container.appendChild(li)
+                li.appendChild(url)
+            }
+            // project_table.appendChild(li)
+            // return
+            }
+        else{
+            console.log("Not projects in this language")
+        }
+        }
+</script>
