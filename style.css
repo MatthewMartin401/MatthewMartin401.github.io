@@ -13,9 +13,10 @@ body{
     margin-left: 10vw;
     margin-right: 10vw;
     background-color: var(--altbgcolor);
-    border-color: var(--background-color);
-    border-width: 10;
+    /* border-color: var(--background-color); */
+    /* border-width: 10; */
     height: fill;
+    width: 80vw;
     
     /* outline: auto;
     outline-width: 10;
@@ -28,7 +29,7 @@ table{
     align-self: center;
     min-height: 3vh;
     min-width: 80vw;
-    width: auto;
+    width: fill;
     position: static;
     margin-right: 10vw;
     
@@ -59,20 +60,39 @@ header{
 }
 
 .page{
+    /* margin-left: 1cm;
+    margin-right: 1cm; */
+    position: relative;
+    min-height: 100vh;
+}
+
+#ProjectListButtons{
+    display: grid;
+    /* grid-template: auto, auto; */
+    grid-template-columns: auto auto auto;
+}
+
+#ProjectListButtons img{
+    max-height: 200px;
+    max-width: 200px;
+}
+
+#content{
+    padding-bottom: 2.5rem;
     margin-left: 1cm;
     margin-right: 1cm;
 }
 
 footer{
     position: absolute;
-    margin-left: 10vw;
-    margin-right: 20vw;
+    /* margin-left: 10vw; */
+    /* margin-right: 20vw; */
     width: 80vw;
-    max-width: 80vw;
-    top: 100vh;
+    /* max-width: 80vw; */
+    /* top: 100vh; */
     bottom: 0;
     left: 0;
-    height: auto;
+    height: 2.5rem;
     min-height: 40;
     background-color: blue;
 }
@@ -114,6 +134,32 @@ footer{
     max-width: 50vw;
 }
 
+#imgSelected_hid{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+#vidSelected{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: 50vh;
+    width: 40vw;
+    max-height: 50vh;
+    max-width: 50vw;
+}
+
+#vidSelected_hid{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+/* #vidSelected_hid{
+
+} */
+
 .project-img{
     /* position: relative; */
     /* display: block; */
@@ -128,3 +174,11 @@ footer{
     /* position: static; */
 }
 
+.project-iframe{
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+p{
+    display: inline-block;
+}

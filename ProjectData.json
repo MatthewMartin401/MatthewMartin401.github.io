@@ -1,0 +1,41 @@
+{
+    "projects-list" : [
+        ["Python", ["Journal App", "p1"],["example 2", ""]],
+        ["React", ["E-Commerce Website", "p3"]],
+        ["JavaScript", []],
+        ["Unreal Engine 4", []]
+    ],
+    "p1" : {
+        "name" : "Python Journal App",
+        "libraries" : ["TkInter."],
+        "img" : [
+                    {"alt" : "Journal app thats just been opened.", "src" : "/Project Images/Journal_Main[2].png"},
+                    {"alt" : "Journal app that has document called '2024-04-02_Example, containing text.' .", "src" : "/Project Images/Journal_Main[3].png"},
+                    {"alt" : "Journal app document, that has been saved as a .txt file.", "src" : "/Project Images/Journal_Main[4].png"},
+                    {"alt" : "Same txt file, but has been updated with additional text.", "src" : "/Project Images/Journal_Main[5].png"},
+                    {"alt" : "Same txt file, but all of the text has been replaced with other text.", "src" : "/Project Images/Journal_Main[6].png"},
+                    {"alt" : "Video showing UE4 work.", "src" : "https://www.youtube.com/embed/2GYa84zGYsg?si=my3vT9HxB_1No5Co"}
+                ],
+        "des" : "This is an app created using Python and the TkInter API. The application allows the user to input the file name and the content. However, the file name has the date of the journal entry at the end. The files save location is where the application is."
+    },
+    "p3" : {
+        "name" : "E-Commerce React Website",
+        "libraries" : ["React Framework", "Sequelize", "Node.JS", "Express"],
+        "img" : [
+                    {"alt" : "Image displaying what the website looks like on light mode.", "src" : "/Project Images/LightMode-React.PNG"},
+                    {"alt" : "Image displaying what the website looks like on dark mode.", "src" : "/Project Images/DarkMode-React.PNG"},
+                    {"alt" : "Basket page, containing no items.", "src" : "/Project Images/Basket.PNG"},
+                    {"alt" : "Webpage with links for all of the categories.", "src" : "/Project Images/Category.PNG"},
+                    {"alt" : "Comedy category webpage, containing no items.", "src" : "/Project Images/Theme.PNG"}
+                ],
+        "des" : "This website was created using the React Framework, Node.js, Sequelize, and Express. The website is data driven, loading its content through queries to a SQL database stored within a server. Complete functions: [ - Adding/Removing from basket. - Loading item pages. - Loading all basket items to the basket page: Subtotal of multiple orders & Total prices of all items in basket.] Incomplete functions: [ - Placing orders in SQL database. - Loading items on category page.]"
+    },
+    "p4" : {
+        "name" : "",
+        "libraries" : [],
+        "img" : [
+            {"alt" : "Video showing UE4 work.", "src" : "https://youtu.be/2GYa84zGYsg"}
+        ],
+        "des" : ""
+    }
+}

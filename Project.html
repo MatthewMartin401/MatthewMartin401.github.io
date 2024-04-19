@@ -22,127 +22,27 @@
                     <a href="">About</a>
                 </td>
             </tr>
-        </table>
+            </table>
         <div class="page">
-            <h1 id="project-title"></h1>
-            <p>Dependencies used:</p>
-            <ol id = "libraries-used">
-            </ol>
-            <div id = "imgContainer">
-                <img id = "imgSelected">
-                <video id = "vidSelected">Browser does not support this player.</video>
+            <div id="content">
+                <h1 id="project-title"></h1>
+                <p>Dependencies used:</p>
+                <ol id = "libraries-used">
+                </ol>
+                <div id = "imgContainer">
+                    <img id = "imgSelected">
+                    <iframe id = "vidSelected" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div id = "gallery">
+                </div>
+                <p id = "description">Description.</p>
             </div>
-            <div id = "gallery">
-            </div>
-            <p id = "description">Description.</p>
+            <footer>
+                Footer.
+            </footer>
         </div>
     </body>
-    <footer>
-        Footer
-    </footer>
 </html>
 
-<script>
-    const info = {
-        "p1" : {
-            "name" : "Python Journal App",
-            "libraries" : ["TkInter."],
-            "img" : [
-                        {"alt" : "Journal app thats just been opened.", "src" : "/Project Images/Journal_Main[2].png"},
-                        {"alt" : "Journal app that has document called '2024-04-02_Example, containing text.' .", "src" : "/Project Images/Journal_Main[3].png"},
-                        {"alt" : "Journal app document, that has been saved as a .txt file.", "src" : "/Project Images/Journal_Main[4].png"},
-                        {"alt" : "Same txt file, but has been updated with additional text.", "src" : "/Project Images/Journal_Main[5].png"},
-                        {"alt" : "Same txt file, but all of the text has been replaced with other text.", "src" : "/Project Images/Journal_Main[6].png"}
-                    ],
-            "des" : `This is an app created using Python and the TkInter API. The application allows the user to input the file name and the content.
-                    However, the file name has the date of the journal entry at the end. The files save location is where the application is.`},
-        "p3" : {
-            "name" : "E-Commerce React Website",
-            "libraries" : ["React Framework", "Sequelize", "Node.JS", "Express"],
-            "img" : [
-                        {"alt" : "Image displaying what the website looks like on light mode.", "src" : "/Project Images/LightMode-React.PNG"},
-                        {"alt" : "Image displaying what the website looks like on dark mode.", "src" : "/Project Images/DarkMode-React.PNG"},
-                        {"alt" : "Basket page, containing no items.", "src" : "/Project Images/Basket.PNG"},
-                        {"alt" : "Webpage with links for all of the categories.", "src" : "/Project Images/Category.PNG"},
-                        {"alt" : "Comedy category webpage, containing no items.", "src" : "/Project Images/Theme.PNG"}
-                    ],
-            "des" : `This website was created using the React Framework, Node.js, Sequelize, and Express. The website is data driven, loading its content through queries to a SQL database
-             stored within a server.
-             Complete functions: 
-                [
-                - Adding/Removing from basket.
-                - Loading item pages.
-                - Loading all basket items to the basket page.
-                    - Subtotal of multiple orders.
-                    - Total prices of all items in basket.
-                ]
-             Incomplete functions:
-             [
-                - Placing orders in SQL database.
-                - Loading items on category page.
-            ]
-                `}
-    }
-    const URL_Param = new URLSearchParams(window.location.search)
-    const project = URL_Param.get("project")
-    console.log(project)
-    const t = document.getElementById("title")
-    t.innerHTML = info[project]["name"]
-
-    document.getElementById("project-title").innerHTML = info[project]["name"]
-    const dis_libaries = document.getElementById("libraries-used")
-    for(i = 0; i < info[project]["libraries"].length;i++){
-        // console.log(i)
-        // let new_item = document.createElement("li").innerHTML = info[project]["libraries"][i]
-        // dis_libaries.append(new_item)
-        let li = document.createElement("li")
-        li.textContent = info[project]["libraries"][i]
-        console.log(li.textContent)
-        dis_libaries.appendChild(li)
-    }
-
-
-    const selectedImage = document.getElementById("imgSelected")
-    const selectedVid = document.getElementById("vidSelected")
-    const ChangeImage = (x) => {
-        if (x["src"].toLowerCase().endsWith("png")){
-            console.log("img")
-            selectedImage.src = x.src
-            selectedImage.alt = x.alt
-        }
-        else if(x["src"].toLowerCase().endsWith("png")){
-            console.log("Vid")
-        }
-    }
-
-    if(info[project]["img"][0]["src"].toLowerCase().endsWith("png")){
-        selectedVid.hidden = true
-        selectedImage.hidden = false
-        selectedImage.src = info[project]["img"][0]["src"]
-    }
-    else if(info[project]["img"][0]["src"].toLowerCase().startsWith("https")){
-        selectedImage.hidden = true
-        selectedVid.hidden = false
-        selectedVid.src = info[project]["img"][0]["src"]
-    }
-    
-
-    const gallery = document.getElementById("gallery")
-    for(i = 0; i < info[project]["img"].length; i++){
-        if(info[project]["img"][i]["src"].toLowerCase().endsWith("png")){
-            // console.log(true)
-
-            let img = document.createElement("img")
-            img.onclick = () => {
-                // console.log(img)
-                ChangeImage(img)
-            }
-            img.alt = info[project]["img"][i]["alt"]
-            img.src = info[project]["img"][i]["src"]
-            img.className = "project-img"
-            gallery.appendChild(img)
-        }
-    }
-
-    document.getElementById("description").innerHTML = info[project]["des"]
-</script>
+<script type="module" src="LoadProject.js"></script>
