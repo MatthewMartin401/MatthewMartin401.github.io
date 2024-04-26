@@ -7,8 +7,7 @@
                     {"alt" : "Journal app that has document called '2024-04-02_Example, containing text.' .", "src" : "/Project Images/Journal_Main[3].png"},
                     {"alt" : "Journal app document, that has been saved as a .txt file.", "src" : "/Project Images/Journal_Main[4].png"},
                     {"alt" : "Same txt file, but has been updated with additional text.", "src" : "/Project Images/Journal_Main[5].png"},
-                    {"alt" : "Same txt file, but all of the text has been replaced with other text.", "src" : "/Project Images/Journal_Main[6].png"},
-                    {"alt" : "Video showing UE4 work.", "src" : "https://www.youtube.com/embed/2GYa84zGYsg?si=my3vT9HxB_1No5Co"}
+                    {"alt" : "Same txt file, but all of the text has been replaced with other text.", "src" : "/Project Images/Journal_Main[6].png"}
                 ],
         "des" : [
             {"p": "This is an app created using Python and the TkInter API. The application allows the user to input the file name and the content. However, the file name has the date of the journal entry at the end. The files save location is where the application is."}
@@ -34,21 +33,5 @@
             {"ul" : "- Placing orders in SQL database."},
             {"ul" : "- Loading items on category page."}
         ]
-    },
-    "p4" : {
-        "name" : "example",
-        "libraries" : [],
-        "img" : [
-            {"alt" : "Video showing UE4 work.", "src" : "https://youtu.be/2GYa84zGYsg"}
-        ],
-        "des" : ""
-    },
-    "p5" : {
-        "name" : "example",
-        "libraries" : [],
-        "img" : [
-            {"alt" : "Grid.", "src" : ""}
-        ],
-        "des" : ""
     }
 }
