@@ -125,4 +125,18 @@ for(let i = 0; i < info[project]["img"].length; i++){
     }
 }
 
-document.getElementById("description").innerHTML = info[project]["des"]
+// document.getElementById("description").innerHTML = info[project]["des"]
+console.log(info[project]["des"])
+
+const descriptions = document.getElementById("descriptions")
+for(let i = 0; i < info[project]["des"].length; i++){
+    // Get key
+    let key = Object.keys(info[project]["des"][i])
+
+    // Create element
+    let ele = document.createElement(key)
+    // Add information
+    ele.innerText = info[project]["des"][i][key]
+
+    descriptions.appendChild(ele)
+}
