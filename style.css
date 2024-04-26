@@ -52,17 +52,17 @@
 
     .ProjectButton img{
         max-height: 250px;
-        max-width: 250px;
+        max-width: 50vw;
         padding: 10px;
     }
 
     .ProjectButton button{
         /* display: flex; */
         margin: 10px;
-        min-height: 30vh;
-        max-height: 35vh;
+        min-height: 35vh;
+        max-height: 40vh;
         min-width: 70vw;
-        max-width: 75vw;
+        max-width: 70vw;
     }
 }
 
