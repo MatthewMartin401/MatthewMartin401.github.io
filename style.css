@@ -1,4 +1,5 @@
-:root{
+/* Theme 1 */
+/* :root{
     --altbgcolor: grey;
     --color1: black;
     --color2: white;
@@ -7,8 +8,31 @@
     --Header: darkblue;
     color: var(--color2);
     background-color: black;
-}
+} */
 
+/* Theme 2 */
+/* :root{
+    --altbgcolor: black;
+    --color1: black;
+    --color2: white;
+    --color3: grey;
+    --color4: grey;
+    --Header: black;
+    color: var(--color2);
+    background-color: black;
+} */
+
+/* Theme 3 */
+:root{
+    --altbgcolor: lightslategray;
+    --color1: black;
+    --color2: white;
+    --color3: darkseagreen;
+    --color4: mediumseagreen;
+    --Header: slateblue;
+    color: var(--color2);
+    background-color: black;
+}
 
 /*Mobile*/
 @media screen and (max-width: 714px) {
@@ -51,9 +75,8 @@
     }
 
     .ProjectButton img{
-        max-height: 250px;
-        max-width: 50vw;
-        padding: 5px;
+        max-height: 80%;
+        max-width: 80%;
     }
 
     .ProjectButton button{
@@ -67,7 +90,7 @@
     }
 }
 
-@media screen and (min-width: 714px) and (max-width: 1094px) {
+@media screen and (min-width: 714px) and (max-width: 1306px) {
 
     body{
         max-width: 100%;
@@ -78,8 +101,9 @@
     }
 
     #ProjectListSection{    
-        max-width: 80vw;    
         grid-template-columns: auto auto;
+        min-height: fit-content;
+        max-height: fit-content;
     }
     .content{
         padding-bottom: 2.5rem;
@@ -107,13 +131,12 @@
     }
 
     .ProjectButton img{
-        max-height: 250px;
-        max-width: 250px;
-        padding: 10px;
+        max-height: 60%;
+        max-width: 60%;
+        margin: 10px;
     }
 
     .ProjectButton button{
-        /* display: flex; */
         margin: 10px;
         min-height: 40vh;
         max-height: 40vh;
@@ -122,7 +145,7 @@
 }
 
 /*Desktop*/
-@media screen and (min-width: 1095px) {
+@media screen and (min-width: 1306px) {
     body{
         margin-left: 10vw;
         margin-right: 10vw;
@@ -255,23 +278,32 @@ header{
     max-height: 50vh;
     margin-left: auto;
     margin-right: auto;
+    min-height: 400px;
 }
 
 .ProjectButton button{
     position: relative;
     padding: 5%;
+    padding-bottom: 10%;
     color: var(--color1);
     background-color: var(--color3);
+    min-height: 90%;
+    max-height: 91%;
 }
 
 .ProjectButton #imgDiv{
     height: auto;
-    min-height: 10vh;
     align-content: center;
     text-align: center;
     margin: auto;
-    background-color: var(--color3);
-    height: auto;
+    background-color: var(--color2);
+    min-height: 80%;
+    max-height: 90%;
+}
+
+.ProjectButton img{
+    position: relative;
+    max-height: 100%;
 }
 
 .ProjectButton #headDiv, #textDiv{
@@ -281,8 +313,8 @@ header{
     background-color: var(--color1);
 
     /* height: 5vh; */
-    min-height: 4vh;
-    height: auto;
+    min-height: 90%;
+    height: 100px;
     max-height: 5vh;
 }
 

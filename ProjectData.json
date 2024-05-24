@@ -1,16 +1,50 @@
 {
     "p1" : {
         "name" : "Python Journal App",
-        "libraries" : ["TkInter."],
+        "libraries" : ["TkInter.", "Datatime.", "OS"],
         "img" : [
                     {"alt" : "Journal app thats just been opened.", "src" : "/Project Images/Journal_Main[2].png"},
                     {"alt" : "Journal app that has document called '2024-04-02_Example, containing text.' .", "src" : "/Project Images/Journal_Main[3].png"},
-                    {"alt" : "Journal app document, that has been saved as a .txt file.", "src" : "/Project Images/Journal_Main[4].png"},
-                    {"alt" : "Same txt file, but has been updated with additional text.", "src" : "/Project Images/Journal_Main[5].png"},
-                    {"alt" : "Same txt file, but all of the text has been replaced with other text.", "src" : "/Project Images/Journal_Main[6].png"}
+                    {"alt" : "Journal app being saved again, opening a pop-up window asking user if they want to save and informing them that 'Any changes made will be irreversible.'", "src" : "/Project Images/Journal_Main[4].png"},
+                    {"alt" : "Journal app document, that has been saved as a .txt file.", "src" : "/Project Images/Journal_Main[5].png"},
+                    {"alt" : "Same txt file, but has been updated with additional text.", "src" : "/Project Images/Journal_Main[6].png"},
+                    {"alt" : "Same txt file, but all of the text has been replaced with other text.", "src" : "/Project Images/Journal_Main[7].png"}
                 ],
         "des" : [
-            {"p": "This is an app created using Python and the TkInter API. The application allows the user to input the file name and the content. However, the file name has the date of the journal entry at the end. The files save location is where the application is."}
+            {"p": "This is an app created using Python and the TkInter library. The application allows the user to input the file name and the content, as well as the date. The file will be save as a text with with a name structure of date and then filename. Files can also be opened by entering the date and the file name, and then using the open button. Using the clear button will delete all of the text contained within the app. The files save location is where the application is."},
+            {"p": "I created this app as a fix to a probelm I encountered when writing notes. I had all of the notes in one folder, but the order of the notes were getting muddled."},
+            {"p" : "Complete functions:"},
+            {"ul" : "- Date entry. Automatically detects the current date."},
+            {"ul" : "- Filename entry."},
+            {"ul" : "- File saving and opening. Saves files under naming structure of date_filename."},
+            {"ul" : "- Opening message box asking user if they want to overwrite, and that it would be irreversible."},
+            {"ul" : "- Clear all text button."}
+        ]
+    },
+    "p2" : {
+        "name" : "Dots and Boxes Python Game.",
+        "libraries" : ["Turtle.", "Math.", "Tkinter."],
+        "img" : [
+                    {"alt" : "Image of game showing an empty grid, with both players having yet to begin thier turn.", "src" : "/Project Images/DotsBoxes-1.PNG"},
+                    {"alt" : "Image of game, showing the first move made by red player.", "src" : "/Project Images/DotsBoxes-2.PNG"},
+                    {"alt" : "Image of game with both player having taken their turn.", "src" : "/Project Images/DotsBoxes-3.PNG"},
+                    {"alt" : "Player red has filled a box, gaining a point.", "src" : "/Project Images/DotsBoxes-4.PNG"},
+                    {"alt" : "Since player red gained a point, they can take another action. Player fills two boxes with one action on this turn.", "src" : "/Project Images/DotsBoxes-5.PNG"},
+                    {"alt" : "Game has been completed, with player red having won with a score of 42 against 39. Message box has opened asking if players want to play again.", "src" : "/Project Images/DotsBoxes-6.PNG"},
+                    {"alt" : "Global variable of columns and row have been change to 2 and 6, creating a grid with 2 columns and 6 rows. The grid outline has adapted to reflect this change.", "src" : "/Project Images/DotsBoxes-7.PNG"},
+                    {"alt" : "Global variable of columns and row have been change to 6 and 2, creating a grid with 6 columns and 2 rows. The grid outline has adapted to reflect this change.", "src" : "/Project Images/DotsBoxes-8.PNG"}
+                ],
+        "des" : [
+            {"p" : "This project is a re-creates the classic dots and boxes paper game as an App. This app was created in Python, using the Turtle and Math libraries. It supports a maximum of 2 players, and assigns the colors of red and blue to the players."},
+            {"p" : "Complete functions:"},
+            {"ul" : "- Change turns."},
+            {"ul" : "- Increase scores."},
+            {"ul" : "- Detect completion and open a message box to ask players whether they want to replay. If so, reset the game, otherwise close the app."},
+            {"ul" : "- Fill in completed box and increase the players score. If score increased, dont change turn."},
+            {"ul" : "- If selected dots are valid, create line."},
+            {"ul" : "- Display showing each players scores, and whos turn it is."},
+            {"ul" : "- Clear and reset the game."},
+            {"ul" : "- Adaptable grid outline."}
         ]
     },
     "p3" : {
