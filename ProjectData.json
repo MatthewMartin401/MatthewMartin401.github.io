@@ -25,14 +25,14 @@
         "name" : "Dots and Boxes Python Game.",
         "libraries" : ["Turtle.", "Math.", "Tkinter."],
         "img" : [
-                    {"alt" : "Image of game showing an empty grid, with both players having yet to begin thier turn.", "src" : "/Project Images/DotsBoxes-1.PNG"},
-                    {"alt" : "Image of game, showing the first move made by red player.", "src" : "/Project Images/DotsBoxes-2.PNG"},
-                    {"alt" : "Image of game with both player having taken their turn.", "src" : "/Project Images/DotsBoxes-3.PNG"},
-                    {"alt" : "Player red has filled a box, gaining a point.", "src" : "/Project Images/DotsBoxes-4.PNG"},
-                    {"alt" : "Since player red gained a point, they can take another action. Player fills two boxes with one action on this turn.", "src" : "/Project Images/DotsBoxes-5.PNG"},
-                    {"alt" : "Game has been completed, with player red having won with a score of 42 against 39. Message box has opened asking if players want to play again.", "src" : "/Project Images/DotsBoxes-6.PNG"},
-                    {"alt" : "Global variable of columns and row have been change to 2 and 6, creating a grid with 2 columns and 6 rows. The grid outline has adapted to reflect this change.", "src" : "/Project Images/DotsBoxes-7.PNG"},
-                    {"alt" : "Global variable of columns and row have been change to 6 and 2, creating a grid with 6 columns and 2 rows. The grid outline has adapted to reflect this change.", "src" : "/Project Images/DotsBoxes-8.PNG"}
+                    {"alt" : "Image of game showing an empty grid, with both players having yet to begin thier turn.", "src" : "/Project Images/DotsBoxes-1.png"},
+                    {"alt" : "Image of game, showing the first move made by red player.", "src" : "/Project Images/DotsBoxes-2.png"},
+                    {"alt" : "Image of game with both player having taken their turn.", "src" : "/Project Images/DotsBoxes-3.png"},
+                    {"alt" : "Player red has filled a box, gaining a point.", "src" : "/Project Images/DotsBoxes-4.png"},
+                    {"alt" : "Since player red gained a point, they can take another action. Player fills two boxes with one action on this turn.", "src" : "/Project Images/DotsBoxes-5.png"},
+                    {"alt" : "Game has been completed, with player red having won with a score of 42 against 39. Message box has opened asking if players want to play again.", "src" : "/Project Images/DotsBoxes-6.png"},
+                    {"alt" : "Global variable of columns and row have been change to 2 and 6, creating a grid with 2 columns and 6 rows. The grid outline has adapted to reflect this change.", "src" : "/Project Images/DotsBoxes-7.png"},
+                    {"alt" : "Global variable of columns and row have been change to 6 and 2, creating a grid with 6 columns and 2 rows. The grid outline has adapted to reflect this change.", "src" : "/Project Images/DotsBoxes-8.png"}
                 ],
         "des" : [
             {"p" : "This project is a re-creates the classic dots and boxes paper game as an App. This app was created in Python, using the Turtle and Math libraries. It supports a maximum of 2 players, and assigns the colors of red and blue to the players."},
@@ -51,11 +51,11 @@
         "name" : "E-Commerce React Website",
         "libraries" : ["React Framework", "Sequelize", "Node.JS", "Express"],
         "img" : [
-                    {"alt" : "Image displaying what the website looks like on light mode.", "src" : "/Project Images/LightMode-React.PNG"},
-                    {"alt" : "Image displaying what the website looks like on dark mode.", "src" : "/Project Images/DarkMode-React.PNG"},
-                    {"alt" : "Basket page, containing no items.", "src" : "/Project Images/Basket.PNG"},
-                    {"alt" : "Webpage with links for all of the categories.", "src" : "/Project Images/Category.PNG"},
-                    {"alt" : "Comedy category webpage, containing no items.", "src" : "/Project Images/Theme.PNG"}
+                    {"alt" : "Image displaying what the website looks like on light mode.", "src" : "/Project Images/LightMode-React.png"},
+                    {"alt" : "Image displaying what the website looks like on dark mode.", "src" : "/Project Images/DarkMode-React.png"},
+                    {"alt" : "Basket page, containing no items.", "src" : "/Project Images/Basket.png"},
+                    {"alt" : "Webpage with links for all of the categories.", "src" : "/Project Images/Category.png"},
+                    {"alt" : "Comedy category webpage, containing no items.", "src" : "/Project Images/Theme.png"}
                 ],
         "des" : [
             {"p" : "This website was created using the React Framework, Node.js, Sequelize, and Express. The website is data driven, loading its content through queries to a SQL database stored within a server."},
