@@ -28,6 +28,14 @@ for(let i = 0; i < info[project]["libraries"].length; i++){
     dis_libaries.appendChild(li)
 }
 
+//  Source Link
+
+const Source = document.getElementById("source")
+const link = document.createElement("a")
+link.innerText = "Link"
+link.href = info[project]["source"]
+Source.append(link)
+
 // Selected Item
     // Image
 const selectedImage = document.getElementById("imgSelected")

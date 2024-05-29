@@ -2,6 +2,7 @@
     "p1" : {
         "name" : "Python Journal App",
         "libraries" : ["TkInter.", "Datatime.", "OS"],
+        "source" : "https://github.com/MatthewMartin401/Python/blob/main/Journal_Main.py",
         "img" : [
                     {"alt" : "Journal app thats just been opened.", "src" : "/Project Images/Journal_Main[2].png"},
                     {"alt" : "Journal app that has document called '2024-04-02_Example, containing text.' .", "src" : "/Project Images/Journal_Main[3].png"},
@@ -24,6 +25,7 @@
     "p2" : {
         "name" : "Dots and Boxes Python Game.",
         "libraries" : ["Turtle.", "Math.", "Tkinter."],
+        "source" : "https://github.com/MatthewMartin401/Python/blob/main/Dots%26Boxes.py",
         "img" : [
                     {"alt" : "Image of game showing an empty grid, with both players having yet to begin thier turn.", "src" : "/Project Images/DotsBoxes-1.png"},
                     {"alt" : "Image of game, showing the first move made by red player.", "src" : "/Project Images/DotsBoxes-2.png"},
@@ -50,6 +52,7 @@
     "p3" : {
         "name" : "E-Commerce React Website",
         "libraries" : ["React Framework", "Sequelize", "Node.JS", "Express"],
+        "source" : "https://github.com/MatthewMartin401/React_Website",
         "img" : [
                     {"alt" : "Image displaying what the website looks like on light mode.", "src" : "/Project Images/LightMode-React.png"},
                     {"alt" : "Image displaying what the website looks like on dark mode.", "src" : "/Project Images/DarkMode-React.png"},
